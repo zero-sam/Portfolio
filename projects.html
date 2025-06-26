@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from ramesht.netlify.app/projects by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Mar 2025 05:46:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+.project-card {
+    padding: 8px;
+    width: 500px;
+    height:500px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* margin: 20px auto; */
+}
+
+.project-container{
+    padding-top:45px;
+    display: flex;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-content p {
+    margin: 0 0 15px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-button:hover {
+    background-color:black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1><span>My Portfolio</span></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li><a href='certificates.html'>Certificates</a></li>
+                    <li><a href='projects.html'>Projects</a></li>
+                </ul>
+            </div>
+            <a class='btn' href='contact.html'>Contact</a>
+        </header>
+        <div class="project-container">
+        <div class="project-card">
+            <img src="images/image.png" alt="Project Image">
+            <div class="card-content">
+                <h3>zero-ip-changer</h3>
+                <p>A dynamic ip changer project that works on linux by connecting to the tor network for more secure and privacy.</p>
+                <a href="https://github.com/zero-sam/zero-ip-changer/" class="card-button" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/portfolio.png" alt="Project Image">
+            <div class="card-content">
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal portfolio showcasing skills, projects, and achievements with an elegant design, interactive navigation, downloadable resume, and contact form for easy communication.</p>
+                <a class='card-button' href='index.html'>View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="images/bug-tracker.png" alt="Project Image">
+            <div class="card-content">
+                <h3>Bug Tracker</h3>
+                <p>A responsive mern stack project to report security bugs.</p>
+                <a class='card-button' href='https://github.com/zero-sam/bug-tracker-app/'>View Project</a>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

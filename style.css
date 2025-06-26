@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    overflow: hidden;
+}
+
+.header{
+    width: 1400px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    padding-left:25px;
+    padding-right: 25px;
+    margin-top: 10px;
+}
+
+.logo h1{
+    font-size: 25px;
+    color: #98c1d9;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+}
+
+.logo span{
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.nav-links ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #e0fbfc;
+    transition: 0.4s;
+}
+
+.nav-links ul li a:hover{
+    color: white;
+    font-size: 25px;
+}
+
+.btn{
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background: #353535;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.4) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.btn-primary{
+    margin-left: 100px;
+    background: black;
+}
+
+.circle-image {
+    border-radius:50% ;
+    object-fit:cover;
+    overflow:hidden;
+}
+.image {
+    padding-top: 22px;
+    padding-right: 7px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.btn:hover{
+    scale: 105%;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.main-content{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    position: relative;
+    width: 1400px;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .left p {
+    color: black; 
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.line{
+    width: 80px;
+    border-bottom: 8px solid #363635;
+    margin-bottom: 30px;
+}
+
+.main h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: black;
+    line-height: 1;
+}
+
+.main h2{
+   font-size: 40px; 
+   color: rgb(133, 132, 132);
+   margin-bottom: 50px;
+}
+
+.main span{
+    color: #333333;
+}
+
+.main p{
+    width: 800px;
+    font-size: 18px;
+    color: #e0fbfc;
+    margin-bottom: 30px;
+    letter-spacing: 0.05em;
+}
+
+.image{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 50px solid #333333;
+    z-index: 8888;
+    animation: anim 3s linear infinite;
+}
+
+@keyframes anim{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: -10px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.image img{
+    margin-top: -79px;
+    margin-left: 5px;
+    width: 100%;
+    scale: 140%;
+}
+
+.social{
+    position: absolute;
+    bottom: 8%;
+    left: 14%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Social Icon - Default State */
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+/* Hover effect for social-link */
+.social-link:hover {
+    background-color: black;
+    scale: 105%;
+}
+
+/* Hover effect for social-link2 (Image-based links like LeetCode) */
+.social-link2 img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.social-link2 img:hover {
+    transform: scale(1.2);
+}
+
+/* Hover effect for all social icons (General) */
+.social i {
+    color: #010101;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.social i:hover {
+    color: white;
+    scale: 105%;
+}
+
+/* Social-link for icons like WhatsApp, LinkedIn, etc. */
+.social .social-links:hover i {
+    color: white; /* Change icon color on hover */
+    scale: 105%; /* Scale up on hover */
+}
+
+/* Social Link 2 - Specific Styling (Image Links) */
+.social-link2 img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-link2 img:hover {
+    transform: scale(1.2);
+}
+
+/* Add scale effect for the main social icon links */
+.social-link:hover {
+    background-color: black;
+    scale: 105%;
+}
+.social-link a i.fa-whatsapp {
+    font-size: 38px;
+    transition: 0.3s;
+}
+
+/* Certificate Container */
+#certificates {
+    height: 100vh;
+  }
+  
+  .certificates {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Certificate Card Styles */
+  .certificate {
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.4) 0px 10px 10px -5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .certificate-logo-container {
+    height: 10rem;
+    width: 100%;
+  }
+  
+  .certificate-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .view-cert {
+    display: inline-block;
+    background-color: #333333;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-cert:hover {
+    background-color: black;
+  }
+  
+  .certificate:hover {
+    cursor: pointer;
+    transform: translateY(-10px);  /* Lift on hover */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  
+  }
+  
+  .title2 {
+    font-family: 'Arial', sans-serif; 
+    text-align: center;
+    font-size: medium;
+    padding-top: 5px;
+    color:gray;
+  }
+  
+ 

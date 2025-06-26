@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from ramesht.netlify.app/contact by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Mar 2025 05:46:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; 
+        }
+
+        .profile-text1 {
+            padding-top: 60px;
+            text-align: center;
+            color: gray;
+        }
+
+        .title {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 25px;
+            padding-top: 50px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            flex: 1;
+            max-width: 45%;
+            color: gray;
+        }
+
+        .contact-info .info-item {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .info-item a {
+            color: #353535;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .info-item a:hover {
+            text-decoration: none;
+        }
+
+        .contact-info strong {
+            font-size: 1.2rem;
+            color: black;
+        }
+
+        .socials {
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            transform: translateX(+32%);
+            gap: 25px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid black;
+            transition: 0.2s;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        }
+
+        .social-links:hover {
+            background-color: black;
+            scale: 105%;
+        }
+
+        .social-links a i {
+            color: #010101;
+            font-size: 30px;
+            transition: 0.2s;
+        }
+
+        .social-links a i:hover {
+            color: white;
+            scale: 105%;
+        }
+
+        .social-link2 img {
+            width: 50px;
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+
+        .social-link2 img:hover {
+            transform: scale(1.2);
+        }
+
+        .social-links a i.fa-whatsapp {
+            font-size: 38px;
+        }
+
+        .social-links a i.fa-whatsapp:hover {
+            color: white;
+            scale: 110%;
+        }
+
+        .contact-form {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+            background-color: #eff0f2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-form .form-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .contact-form .form-group input {
+            flex: 1;
+        }
+
+        .contact-form input[type="text"], .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #353535;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: black;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -55%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1><span>My Portfolio</span></h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='about.html'>About</a></li>
+                <li><a href='certificates.html'>Certificates</a></li>
+                <li><a href='projects.html'>Projects</a></li>
+            </ul>
+        </div>
+        <a class='btn' href='contact.html'>Contact</a>
+    </header>
+
+    <p class="profile-text1">Get In Touch</p>
+    <h1 class="title">Contact Info</h1>
+
+    <div class="container">
+        <!-- Left Side: Contact Info and Social Links -->
+        <div class="contact-info">
+            <div class="info-item">
+                <strong>Phone:</strong>
+                <a href="tel:+919500726828">+91 95007 26828</a>
+            </div>
+            <div class="info-item">
+                <strong>Email:</strong>
+                <a href="mailto:samuel9442720507@gmail.com">samuel9442720507@gmail.com</a>
+            </div>
+            <div class="socials">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/samuel-e-z3r0" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=samuel9442720507@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="social-link2">
+                    <a href="https://leetcode.com/u/samuel-e/" target="_blank">
+                        <img src="images/leetcode.png" alt="leetcode">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/919500726828" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/zero-sam" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form">
+            <h2>Send Me a Message</h2>
+        <form id="contact-form" name="submit-to-google-sheet">
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Your Name" required />
+                <input type="email" name="email" id="email" placeholder="Your Email" required />
+            </div>
+            <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Success Popup -->
+        <div id="success-popup" class="popup">
+            <div class="popup-content">
+                <p>Message Submitted Successfully!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Samuel. All Rights Reserved.</p>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const scriptURL = "https://script.google.com/macros/s/AKfycbw7BDeZ7paRtDiVUaPr3FtLH_B-vJ0bb13WGC_a_LtRT9VfiWYBG7RgRJtZkoP7DL0o/exec"; 
+                const form = document.getElementById("contact-form");
+                const popup = document.getElementById("success-popup");
+        
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+        
+                    // Show popup immediately
+                    popup.style.display = "block";
+        
+                    const formData = new FormData(form);
+                    const formObject = Object.fromEntries(formData.entries());
+        
+                    // Send request in the background (async)
+                    fetch(scriptURL, {
+                        method: "POST",
+                        body: new URLSearchParams(formObject),
+                    }).catch(error => {
+                        console.error("Fetch Error:", error);
+                        alert("Submission failed. Please check your internet connection.");
+                        popup.style.display = "none"; // Hide popup if submission fails
+                    });
+        
+                    // Reset form immediately
+                    form.reset();
+        
+                    // Hide popup after 3 seconds
+                    setTimeout(() => {
+                        popup.style.display = "none";
+                    }, 3000);
+                });
+            });
+        </script>        
+     
+</body>
+</html>

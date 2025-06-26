@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from ramesht.netlify.app/about by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Mar 2025 05:46:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap");
+        
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding-top: 4vh;
+            margin: 0 10rem;
+            box-sizing: border-box;
+            min-height: fit-content;
+        }
+
+        .profile-text1 {
+            text-align: center;
+            color: gray;
+        }
+
+        .title {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        #skills {
+            text-align: center;
+            height: 60vh;
+        }
+
+        .section-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            /* padding-top: 2rem; */
+        }
+
+        .technology-icon-container {
+            height: 25vh;
+            margin-top: 3rem;
+            box-sizing: border-box;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+                rgba(0, 0, 0, 0.4) 0px 10px 10px -5px;
+            padding: 0 1rem;
+            width: 10rem;
+            align-items: center;
+        }
+
+        .technology-icon {
+            height: 8rem;
+        }
+
+        .technology-icon-container:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+            filter: brightness(1.2);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .technology-icon-container p{
+            font-weight: 600;
+            color :rgba(4, 4, 4, 0.632);
+        }
+
+        .icon-text {
+            margin-top: 1rem;
+            color: gray;
+        }
+
+        .mysql-logo {
+            height: 6rem;
+        }
+
+        #about {
+            position: relative;
+        }
+
+        .section-container2 {
+            display: flex;
+            justify-content: center;
+            height: 80%;
+            align-items: center;
+        }
+
+        .details-container {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 2rem;
+            border: rgb(53, 53, 53) 0.1rem solid;
+            border-color: rgb(163, 163, 163);
+            text-align: center;
+        }
+
+        #about-containers {
+            gap: 4rem;
+        }
+
+        #title2 {
+            font-size: 1.5rem;
+        }
+
+        .article-container {
+            display: flex;
+            text-align: initial;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        #programming-languages {
+            height: 40vh;
+        }
+
+        .lang-container {
+            margin-top: 3rem;
+        }
+
+        .icon {
+            cursor: pointer;
+            height: 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            margin-left: 1rem;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+  <header class="header">
+  <div class="logo">
+    <h1><span>My Portfolio</span></h1>
+</div>
+  <div class="nav-links">
+      <ul>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='about.html'>About</a></li>
+          <li><a href='certificates.html'>Certificates</a></li>
+          <li><a href='projects.html'>Projects</a></li>
+      </ul>
+  </div>
+  <a class='btn' href='contact.html'>Contact</a>
+</header>
+
+    <section id="about">
+        <p class="profile-text1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container2" id="about-containers">
+            <div class="details-container">
+                <img src="images/education.png" alt="Education icon" class="icon">
+                <h3>Education</h3>
+                <p>B.Tech. Information Technology</p>
+            </div>
+            <div class="text-container">
+                <p>I am Samuel E, a Bachelor’s student in Information Technology at Karpagam Institute of Technology.
+                     I have built a strong foundation in technologies such as Java, Python, Web Development, and Database Management,
+                      complemented by hands-on experience in technical problem-solving. Passionate about coding,
+                       I am committed to continually enhancing my skills to contribute effectively to the tech community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <p class="profile-text1">Explore</p>
+        <h1 class="title" id="title2">Skills</h1>
+        <div class="section-container">
+            <div class="technology-icon-container">
+                <img src="images/html.png" class="technology-icon" alt="html-logo">
+                <h5 class="icon-text">Experienced</h5>
+            </div>
+            <div class="technology-icon-container">
+                <img src="images/css.png" class="technology-icon" alt="css-logo">
+                <h5 class="icon-text">Experienced</h5>
+            </div>
+            <div class="technology-icon-container">
+                <img src="images/js.png" class="technology-icon" alt="js-logo">
+                <h5 class="icon-text">Intermediate</h5>
+            </div>
+            
+            <div class="technology-icon-container">
+                <img src="images/java.jpg" class="technology-icon" alt="java-logo">
+                <h5 class="icon-text">Experienced</h5>
+            </div>
+            <div class="technology-icon-container">
+                <img src="images/logo-mysql-26300.png" class="mysql-logo" alt="mysql-logo">
+                <br><br>
+                <h5 class="icon-text" id="icon-text">Intermediate</h5>
+            </div>
+            <div class="technology-icon-container">
+                <img src="images/mern.jpg" class="mysql-logo" alt="mern-logo">
+                <p>MERN Stack</p>
+                <h5 class="icon-text" id="icon-text">Basic</h5>
+            </div>
+            <div class="technology-icon-container">
+                <img src="images/python.png" class="mysql-logo" alt="python-logo">
+                <p>Python</p>
+                <h5 class="icon-text" id="icon-text">Intermediate</h5>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<!-- Mirrored from ramesht.netlify.app/about by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Mar 2025 05:46:42 GMT -->
+</html>
